@@ -2,4 +2,18 @@
 
 source InstallWARes/config.sh
 
-echo $VCARD
+InitInstall ()
+{
+	echo "Initiating script...";
+	pacman -Syu --noconfirm;
+	echo "Initialization finished!";
+}
+
+InstallVDrivers ()
+{
+	echo "Installing $VCDRIVER...";
+	
+}
+
+InitInstall;
+if [ $VCDRIVER -ne "none" ];then InstallVDrivers;

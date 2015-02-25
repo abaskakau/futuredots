@@ -1,3 +1,3 @@
 #!/bin/bash
 
-VCARD=nvidia
+VCDRIVER=nvidia
